@@ -1,0 +1,91 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("background1.jpg");
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender {
+  background-color: rgba(23, 45, 2, 0.882);
+  color: white;
+  width: 450px;
+  height: 520px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.month {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.758);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  color: black;
+}
+
+.month h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.month p {
+  font-size: 16px;
+}
+
+.weekdays {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.weekdays div {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.days div {
+  font-size: 14px;
+  margin: 3px;
+  width: 57.5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days div:hover:not(.empty),
+.days div:focus:not(.empty) {
+  outline: 3px solid rgb(255, 241, 90);
+  cursor: pointer;
+}
+
+.today {
+  background-color: rgb(153, 255, 0);
+  color: black;
+}
